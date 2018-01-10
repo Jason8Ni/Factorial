@@ -5,9 +5,12 @@
 using namespace std;
 
 int main() {
+	int x;
+	cout << "Enter a integer: ";
+	cin >> x;
 		
 	//create object
-	Factorial test = Factorial(4);
+	Factorial test = Factorial(x);
 	
 	//test method
 	cout << test.getFactorial() << endl;
