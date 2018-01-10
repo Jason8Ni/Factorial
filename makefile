@@ -1,5 +1,9 @@
-CC=gcc
+CC=g++
 CFLAGS=-I.
 
-factorialmake: main.o Factorial.o
-     $(CC) -o factorialmake main.o Factorial.o -I.
+clean: *.o factorialmake
+
+all: /bin/false
+
+factorialmake: main.cpp Factorial.cpp
+	$(CC) -o factorialmake main.cpp Factorial.cpp -I.
